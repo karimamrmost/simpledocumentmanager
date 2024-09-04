@@ -16,13 +16,13 @@ app.use(express.json());
 
 
 const users = {
-    admin: { password: bcrypt.hashSync('M@rc0gypt2022', 10), role: 'admin' },
-    owner: { password: bcrypt.hashSync('ownerpassword', 10), role: 'owner' },
-    IT: { password: bcrypt.hashSync('itpassword', 10), role: 'IT' },
-    HR: { password: bcrypt.hashSync('M.A', 10), role: 'HR' },
-    Finance: { password: bcrypt.hashSync('acc', 10), role: 'Finance' },
-    Commercial: { password: bcrypt.hashSync('commercialpassword', 10), role: 'Commercial' },
-    Warehouse: { password: bcrypt.hashSync('warehousepassword', 10), role: 'Warehouse' }
+    admin: { password: bcrypt.hashSync('1234', 10), role: 'admin' },
+    owner: { password: bcrypt.hashSync('1234', 10), role: 'owner' },
+    IT: { password: bcrypt.hashSync('1234', 10), role: 'IT' },
+    HR: { password: bcrypt.hashSync('1234', 10), role: 'HR' },
+    Finance: { password: bcrypt.hashSync('1234', 10), role: 'Finance' },
+    Commercial: { password: bcrypt.hashSync('1234', 10), role: 'Commercial' },
+    Warehouse: { password: bcrypt.hashSync('1234', 10), role: 'Warehouse' }
 };
 
 app.post('/login', (req, res) => {
