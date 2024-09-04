@@ -1,0 +1,16 @@
+{
+    "name": "document-manager",
+    "version": "1.0.0",
+    "description": "A simple web app to manage PDF documents with upload and download functionality.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "express": "^4.17.1",
+        "multer": "^1.4.2"
+    },
+    "author": "",
+    "license": "ISC"
+}

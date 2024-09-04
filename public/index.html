@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Image/favicon-16x16.png">
+    <link rel="manifest" href="/Image/site.webmanifest">
+    <title>Marcogypt Document Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <img src="/Image/logo.png" alt="Company Logo" class="modal-logo">
+            <h2>Login</h2>
+            <label for="account-type">Account Type:</label>
+            <select id="account-type">
+                <option value="admin">Admin</option>
+                <option value="owner">Owner</option>
+                <option value="IT">IT Department</option>
+                <option value="HR">HR Department</option>
+                <option value="Finance">Finance Department</option>
+                <option value="Commercial">Commercial Department</option>
+                <option value="Warehouse">Warehouse Department</option>
+            </select>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+    <div id="main-content" class="hidden">
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn" data-tab="IT">IT</button>
+                <button class="tab-btn" data-tab="HR">HR</button>
+                <button class="tab-btn" data-tab="Finance">Finance</button>
+                <button class="tab-btn" data-tab="Commercial">Commercial</button>
+                <button class="tab-btn" data-tab="Warehouse">Warehouse</button>
+            </div>
+            <div class="tab-controls">
+                <button id="add-tab-btn" class="modern-btn">Add Tab</button>
+                <button id="remove-tab-btn" class="modern-btn">Remove Tab</button>
+            </div>
+        </div>
+        
+        <div class="nested-tabs-container">
+            <div class="nested-tabs">
+                <button class="nested-tab-btn" data-tab="annual">Annual</button>
+                <button class="nested-tab-btn" data-tab="monthly">Monthly</button>
+            </div>
+            <div class="logo-container">
+                <img src="/Image/logo.png" alt="Company Logo" class="company-logo">
+            </div>
+            <div class="nested-tab-controls">
+                <button id="add-nested-tab-btn" class="modern-btn">Add Nested Tab</button>
+                <button id="remove-nested-tab-btn" class="modern-btn">Remove Nested Tab</button>
+            </div>
+        </div>
+        <div class="tab-content">
+            <iframe id="pdf-viewer" width="600" height="400"></iframe>
+            <input type="text" id="search-input" placeholder="Search PDFs">
+            <ul id="file-list"></ul>
+        </div>
+        <input type="file" id="file-upload" accept="application/pdf">
+        <button id="upload-btn" class="modern-btn">Upload</button>
+    </div>
+    <footer style="font-size: 10px">Designed & Developed by Eng. Karim Arafa</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
